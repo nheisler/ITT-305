@@ -9,10 +9,10 @@ $client_id = '478557290483-ttj0lab90khpa0m79da25ob9k9hb3peb.apps.googleuserconte
 $client_secret = 'np0BWSZj8fajHIQCEdLsqK-_';
 $redirect_uri = 'http://localhost/google_login.php';
 
-$db_username = "root";
-$db_password = "password";
-$host_name = "localhost";
-$db_name = "test";
+$db_username = "tpvr30ecr5pmz7tp";
+$db_password = "nlbw1hjb828t5eye";
+$host_name = "hcm4e9frmbwfez47.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$db_name = "fr18ho2pynsaegw2";
 
 $client = new Google_Client();
 $client->setClientID($client_id);
