@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors',1);
 echo "This is the google login page";
 
-require_once('autoload.php');
+require_once('vendor/autoload.php');
 $client_id = '478557290483-ttj0lab90khpa0m79da25ob9k9hb3peb.apps.googleusercontent.com';
 $client_secret = 'np0BWSZj8fajHIQCEdLsqK-_';
 $redirect_uri = 'http://localhost/google_login.php';
