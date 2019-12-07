@@ -7,7 +7,7 @@ echo "This is the google login page";
 require_once('vendor/autoload.php');
 $client_id = '478557290483-ttj0lab90khpa0m79da25ob9k9hb3peb.apps.googleusercontent.com';
 $client_secret = 'np0BWSZj8fajHIQCEdLsqK-_';
-$redirect_uri = 'http://localhost/google_login.php';
+$redirect_uri = 'https://nick-heisler-jokes.herokuapp.com/google_login.php';
 
 $db_username = "tpvr30ecr5pmz7tp";
 $db_password = "nlbw1hjb828t5eye";
