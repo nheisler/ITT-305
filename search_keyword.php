@@ -54,7 +54,7 @@ if ($stmt->num_rows > 0) {
     echo "0 results";
 }
 
-echo"<h2>SQL" . $mysqli->info . "</h2>";
+echo"<h2>SQL" . $mysqli->error . "</h2>";
 
 ?>
 
