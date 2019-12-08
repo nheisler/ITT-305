@@ -24,7 +24,7 @@ if ($mysqli->connect_errno) {
 }
 echo $mysqli->host_info . "<br>";
 
-$sql = "SELECT JokeID, Joke_question, Joke_answer, users_id FROM Jokes_table";
+$sql = "SELECT JokeID, Joke_question, Joke_answer, users_id FROM jokes_table";
 $result = $mysqli->query($sql);
 
 if ($result->num_rows > 0) {
