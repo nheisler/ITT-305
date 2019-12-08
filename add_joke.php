@@ -22,7 +22,7 @@ $userid = $_SESSION['userid'];
 //Search the database for the word chicken
 echo"<h2>Trying to add a new joke: $new_joke_question $new_joke_answer for id $userid</h2>";
 
-$stmt = $mysqli->prepare("INSERT INTO Jokes_table (JokeID, Joke_question, Joke_answer, users_id) VALUES (NULL, ?, ?, ?)");
+$stmt = $mysqli->prepare("INSERT INTO jokes_table (JokeID, Joke_question, Joke_answer, users_id) VALUES (NULL, ?, ?, ?)");
 $stmt->bind_param("ssi", $new_joke_question, $new_joke_answer, $userid);
 $stmt->execute();
 $stmt->close();
