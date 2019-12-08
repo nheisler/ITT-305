@@ -28,14 +28,13 @@ $keywordfromform = "%" . $keywordfromform . "%";
 //Search the database for the word chicken
 echo"<h2>Show all jokes with the word $keywordfromform</h2>";
 
-//$stmt = $mysqli->prepare("SELECT JokeID, Joke_question, Joke_answer, users_id, username FROM Jokes_table JOIN users ON users.id = jokes_table.users_id WHERE Joke_question LIKE ?");
-$stmt = $mysqli->prepare("SELECT * FROM Jokes_table");
+$stmt = $mysqli->prepare("SELECT JokeID, Joke_question, Joke_answer, users_id, username FROM Jokes_table JOIN users ON users.id = jokes_table.users_id WHERE Joke_question LIKE ?");
 
-//$stmt->bind_param("s", $keywordfromform);
+$stmt->bind_param("s", $keywordfromform);
 
 $stmt->execute();
 $stmt->store_result();
-//$stmt->bind_result($JokeID, $Joke_question, $Joke_answer, $userid, $username);
+$stmt->bind_result($JokeID, $Joke_question, $Joke_answer, $userid, $username);
 
 ?>
 
