@@ -9,10 +9,10 @@ $client_id = '478557290483-ttj0lab90khpa0m79da25ob9k9hb3peb.apps.googleuserconte
 $client_secret = 'np0BWSZj8fajHIQCEdLsqK-_';
 $redirect_uri = 'https://nick-heisler-jokes.herokuapp.com/google_login.php';
 
-$db_username = "tpvr30ecr5pmz7tp";
-$db_password = "nlbw1hjb828t5eye";
+$db_username = "jx22may51osq55g1";
+$db_password = "mry6w6c95dg348k4";
 $host_name = "hcm4e9frmbwfez47.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-$db_name = "fr18ho2pynsaegw2";
+$db_name = "zlp4v1037lfjscn3";
 
 $client = new Google_Client();
 $client->setClientID($client_id);
